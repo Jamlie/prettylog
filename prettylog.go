@@ -18,7 +18,7 @@ const (
 	orangeColor    = 202
 	redColor       = 196
 	purplishColor  = 57
-	yellowishColor = 188
+	yellowishColor = 178
 )
 
 var (
@@ -101,7 +101,7 @@ func (h *Handler) Handle(ctx context.Context, r slog.Record) error {
 	}
 
 	fmt.Println(
-		datetimeColor.String(r.Time.Format(timeFormat)),
+		timeColor.String(r.Time.Format(timeFormat)),
 		level,
 		messageColor.String(r.Message),
 		attrsColor.String(string(bytes)),
