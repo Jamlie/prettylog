@@ -12,21 +12,25 @@ import (
 )
 
 const (
-	timeFormat = "[15:04:05]"
+	timeFormat     = "[15:04:05]"
+	greyColor      = 245
+	greenColor     = 40
+	orangeColor    = 202
+	redColor       = 196
+	purplishColor  = 57
+	yellowishColor = 188
 )
 
 var (
 	messageColor = colors.New(colors.WhiteFg)
-	attrsColor   = colors.NewCustomId(245)
+	attrsColor   = colors.NewCustomId(greyColor)
 
-	infoColor    = colors.NewCustomId(40)
-	warningColor = colors.NewCustomId(202)
-	errorColor   = colors.NewCustomId(196)
-	debugColor   = colors.NewCustomId(57)
+	infoColor    = colors.NewCustomId(greenColor)
+	warningColor = colors.NewCustomId(orangeColor)
+	errorColor   = colors.NewCustomId(redColor)
+	debugColor   = colors.NewCustomId(purplishColor)
 
-	timeColor     = colors.NewCustomId(188)
-	datetimeColor = colors.NewCustomId(178)
-	fileColor     = colors.NewCustomId(12)
+	timeColor = colors.NewCustomId(yellowishColor)
 )
 
 type Handler struct {
